@@ -34,15 +34,13 @@ const Projects = () => {
         </button>
       </div>
       {/* project-slider-container */}
-      <div>
-        <div>
-            {projectsData.map((project, index)=> (
-                <div key={index}>
-                    <img src={project.image} alt={project.title} />
-
-                </div>
-
-            ))}
+      <div className="overflow-hidden">
+        <div className="flex gap-8 transition-transform duration-500 ease-in-out">
+          {projectsData.map((project, index) => (
+            <div key={index} className="relative flex-shrink-0 w-full sm:w-1/4">
+              <img src={project.image} alt={project.title} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

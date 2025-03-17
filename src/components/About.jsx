@@ -43,6 +43,13 @@ const About = () => {
               <p>Ongoing Projects</p>
             </div>
           </div>
+          <p className="my-10 max-w-lg">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nam
+            aspernatur cupiditate fuga dicta blanditiis esse eum explicabo?
+          </p>
+          <button className="bg-blue-600 text-white px-8 py-2 rounded">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

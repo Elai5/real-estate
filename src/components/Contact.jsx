@@ -17,6 +17,31 @@ const Contact = () => {
       <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
         Ready To Make A move? Lets Build Your Future Together
       </p>
+
+      <form className="max-w-2xl mx-auto text-gray-600 pt-8">
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 text-left">
+            Your Name
+            <input
+              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              type="text"
+              name="Name"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+          <div className="w-full md:w-1/2 text-left md:pl-4">
+            Your Email
+            <input
+              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              type="email"
+              name="Email"
+              placeholder="janedo@gmail.com"
+              required
+            />
+          </div>
+        </div>
+      </form>
     </div>
   );
 };

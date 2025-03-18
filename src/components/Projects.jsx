@@ -39,7 +39,7 @@ const Projects = () => {
           Completed
         </span>
       </h1>
-      <p className="text-center text-gray-5000 mb-8 max-w-90 mx-auto">
+      <p className="text-center text-gray-500 mb-8 max-w-80 mx-auto">
         Crafting Spaces, Building Legacies-Explore Our Portfolio
       </p>
       {/* slidderbutoons */}

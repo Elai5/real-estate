@@ -21,7 +21,7 @@ const Header = () => {
             Projects
           </a>
           <a href="#Contact" className=" bg-blue-500 px-8 py-3 rounded">
-            Contact Us
+            ContactUs
           </a>
         </div>
       </div>

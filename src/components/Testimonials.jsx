@@ -19,10 +19,17 @@ const Testimonials = () => {
         Real Stories From People Who Found Home With Us
       </p>
 
-      <div>
+      <div className="flex flex-wrap justify-center gap-8">
         {testimonialsData.map((testimonial, index) => (
-          <div key={index}>
-            <img src={testimonial.image} alt={testimonial.alt} />
+          <div
+            key={index}
+            className="m-w-[340px] border shadow-lg rounded px-8 py-12"
+          >
+            <img
+              className="w-20 h-20 rounded-full mx-auto mb-4"
+              src={testimonial.image}
+              alt={testimonial.alt}
+            />
           </div>
         ))}
       </div>

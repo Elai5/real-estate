@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import { testimonialsData } from "../assets/assets";
+import { assets, testimonialsData } from "../assets/assets";
 
 const Testimonials = () => {
   return (
@@ -30,6 +30,13 @@ const Testimonials = () => {
               src={testimonial.image}
               alt={testimonial.alt}
             />
+            <h2>{testimonial.name}</h2>
+            <p>{testimonial.title}</p>
+            <div>
+              {Array.from({ length: testimonial.rating }, (item, index) => (
+                <img key={index} src={assets.star_icon} alt="" />
+              ))}
+            </div>
           </div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -20,12 +21,14 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
-      alert("Form Submitted Successfully");
+      setResult("");
+      toast.success("Form Submitted Succesfully");
+      // alert("Form Submitted Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
-      alert(data.message);
+      // alert(data.message);
+      toast.error(data.message);
       setResult("");
     }
   };
